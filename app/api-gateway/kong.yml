@@ -1,0 +1,16 @@
+_format_version: "2.1"
+
+services:
+  - name: user-service
+    url: http://host.docker.internal:8080
+    routes:
+      - name: user-route
+        paths:
+          - /user
+  - name: employee-service
+    url: http://host.docker.internal:8081
+    routes:
+      - name: employee-route
+        paths:
+          - /employee
+    
